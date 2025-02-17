@@ -15,15 +15,15 @@ describe( "", () => {
   });
 
   it("App should call add method with one comma seprated numbers", function () {
-    assert.equal(app.add("1,2"), 3);
+    assert.equal(app.add("1,2",","), 3);
   });
 
   it("Add Method Should Handle new line", function () {
-    assert.equal(app.add("1\n2,3"), 6);
+    assert.equal(app.add("1\n2,3",","), 6);
   });
 
   it("Add Method Should Support different delimiters", function () {
-    assert.equal(app.add("//;\n1;2", ";"), 6);
+    assert.equal(app.add("//;\n1;2", ";"), 3);
   });
   
    
