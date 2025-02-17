@@ -6,10 +6,21 @@ module.exports = {
     add: (input) => {
         const splitInput = input.toString().split(",");
         let calculation = 0;
-        console.log(splitInput)
+       
         splitInput.map(data => {
-            if(data){
-                calculation += +data
+            if(data.includes('\n')){
+               
+                let trimmedData = data.replace(/\n/g, ',');
+                console.log(trimmedData)
+                calculation = trimmedData.toString().split(",").reduce(
+                    (accumulator, currentValue) => Number(accumulator) + Number(currentValue),
+                    calculation,
+                );     
+            }
+            else{
+                if(data && typeof +data === 'number'){
+                    calculation += +data
+                }
             }
         })        
         return calculation;
