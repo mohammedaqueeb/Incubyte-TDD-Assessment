@@ -13,6 +13,10 @@ describe( "", () => {
   it("App should call add method with one number", function () {
     assert.equal(app.add(1), 1);
   });
+
+  it("App should call add method with one comma seprated numbers", function () {
+    assert.equal(app.add("1,2"), 3);
+  });
   
    
 }); 
