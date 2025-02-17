@@ -25,6 +25,10 @@ describe( "", () => {
   it("Add Method Should Support different delimiters", function () {
     assert.equal(app.add("//;\n1;2", ";"), 3);
   });
+
+  it("Add Method Should Not Support negative Number", function () {
+    assert.equal(app.add("1,-2,5,-7", ","), 6);
+  });
   
    
 }); 
