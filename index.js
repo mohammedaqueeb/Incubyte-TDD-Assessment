@@ -16,7 +16,7 @@ module.exports = {
                 );     
             }
             else{
-                if(data && !isNaN(data) && typeof +data === 'number'){
+                if(data && !isNaN(data) && +data > 0){
                     calculation += +data
                 }
             }
