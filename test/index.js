@@ -21,6 +21,10 @@ describe( "", () => {
   it("Add Method Should Handle new line", function () {
     assert.equal(app.add("1\n2,3"), 6);
   });
+
+  it("Add Method Should Support different delimiters", function () {
+    assert.equal(app.add("//;\n1;2", ";"), 6);
+  });
   
    
 }); 
