@@ -6,9 +6,9 @@ describe( "", () => {
     assert.equal(app.sayHello(), "hello");
   });
 
-  it("App should call add method with string Value", function () {
-    assert.equal(app.add("hello"), "hello");
-  });
+  // it("App should call add method with string Value", function () {
+  //   assert.equal(app.add("hello"), "hello");
+  // });
 
   it("App should call add method with one number", function () {
     assert.equal(app.add(1), 1);

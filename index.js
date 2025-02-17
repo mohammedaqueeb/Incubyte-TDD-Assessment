@@ -4,7 +4,15 @@ module.exports = {
     },
     
     add: (input) => {
-        return input;
+        const splitInput = input.toString().split(",");
+        let calculation = 0;
+        console.log(splitInput)
+        splitInput.map(data => {
+            if(data){
+                calculation += +data
+            }
+        })        
+        return calculation;
     },
    
 };
