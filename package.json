@@ -1,0 +1,26 @@
+{
+  "name": "incubyte-tdd-assessment",
+  "version": "1.0.0",
+  "description": "assessment",
+  "homepage": "https://github.com/mohammedaqueeb/Incubyte-TDD-Assessment#readme",
+  "bugs": {
+    "url": "https://github.com/mohammedaqueeb/Incubyte-TDD-Assessment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohammedaqueeb/Incubyte-TDD-Assessment.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --recursive --exit"
+  },
+  "dependencies": {
+    "nodemon": "^3.1.9"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0"
+  }
+}
